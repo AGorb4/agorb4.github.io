@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Alex's Resume</title>
 
 <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,6 +32,7 @@
                     <ul class="nav navbar-nav">
                       <li><a href="#education">Education</a></li>
                       <li><a href="#experience">Experience</a></li>
+                      <li><a href="#projects">Projects</a></li>
                       <li><a href="#skills">Skills</a></li>
                       <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -51,11 +52,11 @@
       </div>
       <div id="education" class="jumbotron" style="background-color: rgb(64, 147, 224); color:white">
             <div class="container">
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-4 col-sm-6 col-xs-12 text-left" style="padding-top: 2%">
               <img src="PSUMascot.png" class="img-circle" alt="Education" style="max-width: 100%">
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12">
               <h1>Education</h1>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12" style="margin-left: 5%; max-width: 100%;">
               <h2>Penn State University</h2>
               <h3>University Park, PA</h3>
               <h5>Aug 2012 - May 2016</h5>
@@ -72,11 +73,11 @@
         </div>
           <div id="experience" class="jumbotron" style="background-color: lightgreen;">
                 <div class="container">
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-md-4 col-sm-6 col-xs-12 text-left" style="padding-top: 5%">
                 <img src="ExperienceIcon.png" class="img-circle" alt="Experience" style="width:150px; height: 175px;">
-                </div>
-                <div id="experience" class="col-md-6 col-sm-6 col-xs-12">
                 <h1>Experience</h1>
+                </div>
+                <div id="experience" class="col-md-6 col-sm-6 col-xs-12" style="margin-left: 5%">
                 <h2>Fidelity Investments</h2>
                 <h3>Jersey City, NJ</h3>
                 <br>
@@ -94,22 +95,42 @@
                     </div>
               </div>
             </div>
+            <div id="projects" class="jumbotron" style="background-color: lightgrey;">
+                    <div class="container">
+                  <div class="col-md-4 col-sm-6 col-xs-12 text-left" style="padding-top: 5%">
+                    <img src="ProjectHat.png" class="img-circle" alt="Experience" style="width:150px; height: 175px;">
+                    <h1>Projects</h1>
+                    </div>
+                    <div id="projects" class="col-md-6 col-sm-6 col-xs-12" style="margin-left: 5%">
+                    <h2>Corporate Actions Election Tool</h2>
+                    <p>Revamp of old Corporate Action modules which ran on Mainframe  technology.
+                        Created common RESTful web services using Spring Boot so  users from multiple platforms can manage Corporate Action events  throughout their lifecycle.
+                        Leveraged Pivotal Cloud Foundry’s Gemfire  caching solution for quick data storage and access. Used Swagger for  dynamic API documentation.</p>
+                    <br>
+                    <h2>Election Tool Docker Initiative​</h2>
+                    <p>Proof of concept where the Corporate Actions services were containerized  in order to migrate them to any cloud platform.</p>
+                        </div>
+                  </div>
+                </div>
             <div id="skills" class="jumbotron" style="background-color: #f4511e; color:white">
             <div class="container">
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-md-4 col-sm-6 col-xs-12 text-left" style="padding-top: 2%">
                 <img src="HTMLTagIcon.png" class="img-circle" alt="Skills" style="width:180px; height: 175px;">
+                <h1 style="margin-left: 5%">Skills</h1>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <h1>Skills</h1>
+                <div class="col-md-4 col-sm-4 col-xs-12" style="margin-left: 5%">
                         <ul>
                             <li>Docker</li>
+                            <li>Pivotal Cloud Foundry</li>
                             <li>Java</li>
                             <li>Angular</li>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>JScript</li>
+                            <li>Java Script</li>
                             <li>JQuery</li>
                             <li>SQL</li>
+                            <li>Spring Boot</li>
+                            <li>REST Services</li>
                         </ul>
                     </div>
                  </div>
@@ -117,7 +138,7 @@
         </div>
 
       </div> <!-- /container -->
-      <div id="contact" class="jumbotron bg-grey">
+      <div id="contact" class="jumbotron" style="background-color: white">
             <h2 class="text-center">CONTACT</h2>
             <br>
             <div class="container" style="text-align: center">
@@ -142,10 +163,6 @@ marker.setMap(map);
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTXtTebEQm4_kS8cw_yDCpOqlQ2mpqV6Y&callback=myMap"></script>
     </main>
-
-    <footer>
-      <p>&copy; Company 2017-2018</p>
-    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
