@@ -1,183 +1,164 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Alex's Resume</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Alex's Resume</title>
 
-  </head>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+</head>
 
-        <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>                        
-                    </button>
-                    <a class="navbar-brand" href="#" style="color: white">Alex Gorbachenko</a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                      <li><a href="#education">Education</a></li>
-                      <li><a href="#experience">Experience</a></li>
-                      <li><a href="#projects">Projects</a></li>
-                      <li><a href="#skills">Skills</a></li>
-                      <li><a href="#contact">Contact</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class="container rounded" style="text-align: center;">
 
-    <main role="main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+      <a class="navbar-brand" href="#">Alex Gorbachenko</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron" style="background-color: white">
-        <div class="container">
-          <h1 class="display-3">Hello and welcome!</h1>
-          <p>My name is Alex Gorbachenko, and I'm a Software Engineer currently working
-                at Fidelity Investments in the New York City area.</p>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color: white">
+      <h1 class="display-3">Hello and welcome!</h1>
+      <p>My name is Alex Gorbachenko, and I'm a Software Engineer currently working
+        at Fidelity Investments in the New York City area.</p>
+    </div>
+
+    <div class="row" style="margin-bottom: 10px;">
+      <div class="card col-sm-12">
+        <div class="card-body">
+          <h1 id="skills" class="card-title">Skills</h1>
+          <p class="card-text">
+            <h5>Software</h5>
+            Java 8, SQL, REST, Spring Boot, Linux, Angular, JQuery, JavaScript, HTML, CSS, Bootstrap
+          </p>
+          <h5>Tools</h5>
+          <p class="card-text">Docker, Kafka, Git, Maven, Spring Tool Suite, Visual Studio Code, Eclipse, Putty, JMeter,
+            Postman,
+            SOAPUI, Splunk, DataDog, Sonar, Jenkins, uDeploy, WinSCP, JaCoCo, Junit, Mockito, Swagger
+          </p>
         </div>
       </div>
-      <div id="education" class="jumbotron" style="background-color: rgb(64, 147, 224); color:white">
-            <div class="container">
-            <div class="col-md-4 col-sm-6 col-xs-12 text-left" style="padding-top: 2%">
-              <img src="PSUMascot.png" class="img-circle" alt="Education" style="max-width: 100%">
-              <h1>Education</h1>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-12" style="margin-left: 5%; max-width: 100%;">
-              <h2>Penn State University</h2>
-              <h3>University Park, PA</h3>
-              <h5>Aug 2012 - May 2016</h5>
-              <br>
-              <h4>B.S. Information Science and Technology</h4>
-              <h5>GPA - 3.67</h5>
-              <hr>
-              <h5>Studied Information Science and Technology with a focus on Systems Analysis.
-                  Course work focused mainly on UML, Project Management, Project Proposals, system interactions, and documentation.
-              </h5>
-            </div>
-            </div>
-            </div>
-        </div>
-          <div id="experience" class="jumbotron" style="background-color: lightgreen;">
-                <div class="container">
-              <div class="col-md-4 col-sm-6 col-xs-12 text-left" style="padding-top: 5%">
-                <img src="ExperienceIcon.png" class="img-circle" alt="Experience" style="width:150px; height: 175px;">
-                <h1>Experience</h1>
-                </div>
-                <div id="experience" class="col-md-6 col-sm-6 col-xs-12" style="margin-left: 5%">
-                <h2>Fidelity Investments</h2>
-                <h3>Jersey City, NJ</h3>
-                <br>
-                <hr>
-                <p>Software Engineer - Jun 2018 - Present</p>
-                <br>
-                <hr>
-                <p>Associate Software Engineer - Feb 2017 - Jun 2018</p>
-                <br>
-                <hr>
-                <p>Leap - Sep 2016 - Feb 2017</p>
-                <h5>Fidelity’s training program for new technologists in Raleigh, North Carolina. 
-                    Full-stack technology  training and Professional Development
-                      courses along with case study and  final project.</h5>
-                    </div>
-              </div>
-            </div>
-            <div id="projects" class="jumbotron" style="background-color: lightgrey;">
-                    <div class="container">
-                  <div class="col-md-4 col-sm-6 col-xs-12 text-left" style="padding-top: 5%">
-                    <img src="ProjectHat.png" class="img-circle" alt="Experience" style="width:150px; height: 175px;">
-                    <h1>Projects</h1>
-                    </div>
-                    <div id="projects" class="col-md-7 col-sm-6 col-xs-12" style="margin-left: 5%">
-                    <h2>Corporate Actions Election Tool</h2>
-                    <p>Revamp of old Corporate Action modules which ran on Mainframe  technology.
-                        Created common RESTful web services using Spring Boot so  users from multiple platforms can manage Corporate Action events  throughout their lifecycle.
-                        Leveraged Pivotal Cloud Foundry’s Gemfire  caching solution for quick data storage and access. Used Swagger for  dynamic API documentation.</p>
-                    <br>
-                    <h2>Election Tool Cloud Initiative​</h2>
-                    <p>Conducted a Proof of Concept using Docker to containerize the 
-                        web services from the Corporate Actions Election Tool project.
-                        After containerization was done, was able to successfully deploy
-                        the services to Pivotal Cloud Foundary leveraging Gemfire Cache.
-                    </p>
-                    <br>
-                    <h3>What are Corporate Actions? </h3>
-                    <br>
-                    <iframe width="90%" height="315" src="https://www.youtube.com/embed/rzAnWdyQOy4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
-                  </div>
-                </div>
-            <div id="skills" class="jumbotron" style="background-color: #f4511e; color:white">
-            <div class="container">
-              <div class="col-md-4 col-sm-6 col-xs-12 text-left" style="padding-top: 2%">
-                <img src="HTMLTagIcon.png" class="img-circle" alt="Skills" style="width:180px; height: 175px;">
-                <h1 style="margin-left: 5%">Skills</h1>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12" style="margin-left: 5%">
-                        <ul>
-                            <li>Docker</li>
-                            <li>Pivotal Cloud Foundry</li>
-                            <li>Java</li>
-                            <li>Angular</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Java Script</li>
-                            <li>JQuery</li>
-                            <li>SQL</li>
-                            <li>Spring Boot</li>
-                            <li>REST Services</li>
-                        </ul>
-                    </div>
-                 </div>
-              </div>
-        </div>
+    </div>
 
-      </div> <!-- /container -->
-      <div id="contact" class="jumbotron" style="background-color: white">
-            <h2 class="text-center">CONTACT</h2>
-            <br>
-            <div class="container" style="text-align: center">
-              <div class="col-sm-12">
-                <p><span class="glyphicon glyphicon-map-marker"></span> Hoboken, NJ</p>
-                <p><span class="glyphicon glyphicon-phone"></span> 267-973-9457</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> agorbachenko94@gmail.com</p> 
-              </div>
-            </div>
-          </div>
-          <br>
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(40.745382, -74.032302);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTXtTebEQm4_kS8cw_yDCpOqlQ2mpqV6Y&callback=myMap"></script>
-    </main>
+    <div class="row" style="margin-bottom: 10px;">
+      <div class="card">
+        <div class="card-body">
+          <h1 id="experience" class="card-title">Experience</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est
+            laborum.</p>
+        </div>
+      </div>
+    </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
-  </body>
+    <div class="row" style="margin-bottom: 10px;">
+      <div class="card">
+        <div class="card-body">
+          <h1 id="projects" class="card-title">Projects</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est
+            laborum.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 10px;">
+      <div class="card col-sm-12">
+        <div class="card-body">
+          <h1 id="education" class="card-title">Education</h1>
+          <p class="card-text">
+            <p>Penn State University</p>
+            <p>B.S. Information Science & Technology</p>
+            <p>GPA : 3.7</p>
+            <p>Fall 2012 – May 2016</p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="jumbotron">
+      <h2 class="text-center">CONTACT</h2>
+      <br>
+      <div class="container" style="text-align: center">
+        <div class="col-lg-12">
+          <p><svg class="bi bi-geo" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path d="M9.5 6h1v9a.5.5 0 01-1 0V6z" />
+              <path fill-rule="evenodd"
+                d="M8.489 14.095a.5.5 0 01-.383.594c-.565.123-1.003.292-1.286.472-.302.192-.32.321-.32.339 0 .013.005.085.146.21.14.124.372.26.701.383.655.245 1.593.407 2.653.407s1.998-.162 2.653-.407c.329-.124.56-.259.701-.383.14-.125.146-.197.146-.21 0-.018-.018-.147-.32-.339-.283-.18-.721-.35-1.286-.472a.5.5 0 11.212-.977c.63.137 1.193.34 1.61.606.4.253.784.645.784 1.182 0 .402-.219.724-.483.958-.264.235-.618.423-1.013.57-.793.298-1.855.472-3.004.472s-2.21-.174-3.004-.471c-.395-.148-.749-.337-1.013-.571-.264-.234-.483-.556-.483-.958 0-.537.384-.929.783-1.182.418-.266.98-.47 1.611-.606a.5.5 0 01.595.383z"
+                clip-rule="evenodd" />
+            </svg> Warminster, PA</p>
+          <p><svg class="bi bi-phone" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M13 3H7a1 1 0 00-1 1v11a1 1 0 001 1h6a1 1 0 001-1V4a1 1 0 00-1-1zM7 2a2 2 0 00-2 2v11a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7z"
+                clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M10 15a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+            </svg> 267-973-9457</p>
+          <p><svg class="bi bi-envelope" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M16 5H4a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1zM4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4z"
+                clip-rule="evenodd" />
+              <path fill-rule="evenodd"
+                d="M2.071 6.243a.5.5 0 01.686-.172L10 10.417l7.243-4.346a.5.5 0 11.514.858L10 11.583 2.243 6.93a.5.5 0 01-.172-.686z"
+                clip-rule="evenodd" />
+            </svg>agorbachenko94@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
 </html>
