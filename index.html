@@ -21,6 +21,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="resume.css">
 
 </head>
 
@@ -40,7 +41,7 @@
             <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#employment">Employment</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
@@ -58,14 +59,15 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron" style="background-color: white">
       <h1 class="display-3">Hello and welcome!</h1>
-      <p>My name is Alex Gorbachenko, and I'm a Software Engineer currently working
-        at Fidelity Investments in the New York City area.</p>
+      <p>My name is Alex Gorbachenko, and I'm a Software Engineer currently looking for a full time position where I can
+        continuously learn and be challenged.</p>
     </div>
 
     <div class="row" style="margin-bottom: 10px;">
-      <div class="card col-sm-12">
+      <div class="card shadow p-3 bg-light mb-3 col-sm-12">
         <div class="card-body">
           <h1 id="skills" class="card-title">Skills</h1>
+          <hr style="width: 400px;">
           <p class="card-text">
             <h5>Software</h5>
             Java 8, SQL, REST, Spring Boot, Linux, Angular, JQuery, JavaScript, HTML, CSS, Bootstrap
@@ -80,25 +82,87 @@
     </div>
 
     <div class="row" style="margin-bottom: 10px;">
-      <div class="card">
+      <div class="card shadow p-3 bg-light mb-3 col-sm-12">
         <div class="card-body">
-          <h1 id="experience" class="card-title">Experience</h1>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est
-            laborum.</p>
+          <h1 id="employment" class="card-title">Employment</h1>
+          <hr style="width: 400px;">
+          <h3 class="card-subtitle">Software Engineer</h3>
+          <h5>May 2018 – Feb 2020</h5>
+          <h6><u>Kafka Consumer</u></h6>
+          <ul class="list-unstyled">
+            <li>
+              Implemented Kafka consumer in Java using Spring Boot.
+            </li>
+            <li>
+              Processed XML Corporate Action announcement
+              messages sent by external sources.
+            </li>
+            <li>
+              Used Java Easy Rules Engine to validate message integrity.
+            </li>
+          </ul>
+          <h6><u>Elections Bulk Processor</u></h6>
+          <ul class="list-unstyled">
+            <li>
+              Developed functionality for financial advisors that allowed them to upload up to 500,000 Corporate Action
+              elections through an Excel file, which otherwise would have to be inputted one at a time.
+            </li>
+            <li>
+              Developed a RESTful web service using Java and Spring Boot to accept an Excel file, used Oracle to store
+              the file as a BLOB, and utilized Quartz to schedule a job that reads from the Oracle table and picks up
+              unprocessed files for processing
+            </li>
+          </ul>
+          <h6><u>Cloud Migration</u></h6>
+          <ul class="list-unstyled">
+            <li>
+              Used Docker technology to containerize our Spring Boot applications and deploy them to Pivotal Cloud
+              Foundry’s platform where we leveraged their auto-scaling and caching services.
+            </li>
+            <li>
+              Increased productivity by removing the need to manually setup application servers. Each server could take
+              up
+              to half a week to setup with testing.
+            </li>
+            <li>
+              Mentored junior developers on how to complete the cloud migration request process and how to
+              containerize Spring Boot applications.
+            </li>
+          </ul>
+          <br>
+          <h3 class="card-subtitle">Associate Software Engineer</h3>
+          <h5>Sept 2016 - May 2018</h5>
+          <h6><u>Corporate Actions Services</u></h6>
+          <ul class="list-unstyled">
+            <li style="padding-bottom: 10px;">
+              Transformed the Corporate Actions COBOL mainframe system into a distributed RESTful microservice
+              platform using Java 8 and Spring Boot serving five different business units across Fidelity.
+            </li>
+            <li>
+              Decreased the department’s legacy technology footprint by replacing and then decommissioning over 100
+              mainframe CICS screens.
+            </li>
+            <li>
+              Leveraged knowledge​ ​in Git, programmed in Java using Spring Tool Suite, and utilized the Spring Boot
+              framework along with REST standards. Wrote Junit test cases to achieve 95% or better code coverage.
+            </li>
+          </ul>
+          <h6><u>Leap Training Program</u></h6>
+          <ul class="list-unstyled">
+            <li>
+              Completed a bootcamp style full stack developer training program. SQL, Java, MyBatis, Spring, SOAP, REST,
+              JSP, HTML, CSS, Bootstrap, AJAX, JQuery.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
     <div class="row" style="margin-bottom: 10px;">
-      <div class="card">
+      <div class="card shadow p-3 bg-light mb-3">
         <div class="card-body">
           <h1 id="projects" class="card-title">Projects</h1>
+          <hr style="width: 400px;">
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -112,9 +176,10 @@
     </div>
 
     <div class="row" style="margin-bottom: 10px;">
-      <div class="card col-sm-12">
+      <div class="card shadow p-3 bg-light mb-3 col-sm-12">
         <div class="card-body">
           <h1 id="education" class="card-title">Education</h1>
+          <hr style="width: 400px;">
           <p class="card-text">
             <p>Penn State University</p>
             <p>B.S. Information Science & Technology</p>
@@ -125,39 +190,40 @@
       </div>
     </div>
 
-    <div id="contact" class="jumbotron">
-      <h2 class="text-center">CONTACT</h2>
-      <br>
-      <div class="container" style="text-align: center">
-        <div class="col-lg-12">
-          <p><svg class="bi bi-geo" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path d="M9.5 6h1v9a.5.5 0 01-1 0V6z" />
-              <path fill-rule="evenodd"
-                d="M8.489 14.095a.5.5 0 01-.383.594c-.565.123-1.003.292-1.286.472-.302.192-.32.321-.32.339 0 .013.005.085.146.21.14.124.372.26.701.383.655.245 1.593.407 2.653.407s1.998-.162 2.653-.407c.329-.124.56-.259.701-.383.14-.125.146-.197.146-.21 0-.018-.018-.147-.32-.339-.283-.18-.721-.35-1.286-.472a.5.5 0 11.212-.977c.63.137 1.193.34 1.61.606.4.253.784.645.784 1.182 0 .402-.219.724-.483.958-.264.235-.618.423-1.013.57-.793.298-1.855.472-3.004.472s-2.21-.174-3.004-.471c-.395-.148-.749-.337-1.013-.571-.264-.234-.483-.556-.483-.958 0-.537.384-.929.783-1.182.418-.266.98-.47 1.611-.606a.5.5 0 01.595.383z"
-                clip-rule="evenodd" />
-            </svg> Warminster, PA</p>
-          <p><svg class="bi bi-phone" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M13 3H7a1 1 0 00-1 1v11a1 1 0 001 1h6a1 1 0 001-1V4a1 1 0 00-1-1zM7 2a2 2 0 00-2 2v11a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7z"
-                clip-rule="evenodd" />
-              <path fill-rule="evenodd" d="M10 15a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
-            </svg> 267-973-9457</p>
-          <p><svg class="bi bi-envelope" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M16 5H4a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1zM4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4z"
-                clip-rule="evenodd" />
-              <path fill-rule="evenodd"
-                d="M2.071 6.243a.5.5 0 01.686-.172L10 10.417l7.243-4.346a.5.5 0 11.514.858L10 11.583 2.243 6.93a.5.5 0 01-.172-.686z"
-                clip-rule="evenodd" />
-            </svg>agorbachenko94@gmail.com</p>
+    <div class="row" style="margin-bottom: 10px;">
+      <div class="card shadow p-3 bg-light mb-3 col-sm-12">
+        <div class="card-body">
+          <h1 id="contact" class="card-title">Contact</h1>
+          <hr style="width: 400px;">
+          <p class="card-text">
+            <p><svg class="bi bi-geo" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path d="M9.5 6h1v9a.5.5 0 01-1 0V6z" />
+                <path fill-rule="evenodd"
+                  d="M8.489 14.095a.5.5 0 01-.383.594c-.565.123-1.003.292-1.286.472-.302.192-.32.321-.32.339 0 .013.005.085.146.21.14.124.372.26.701.383.655.245 1.593.407 2.653.407s1.998-.162 2.653-.407c.329-.124.56-.259.701-.383.14-.125.146-.197.146-.21 0-.018-.018-.147-.32-.339-.283-.18-.721-.35-1.286-.472a.5.5 0 11.212-.977c.63.137 1.193.34 1.61.606.4.253.784.645.784 1.182 0 .402-.219.724-.483.958-.264.235-.618.423-1.013.57-.793.298-1.855.472-3.004.472s-2.21-.174-3.004-.471c-.395-.148-.749-.337-1.013-.571-.264-.234-.483-.556-.483-.958 0-.537.384-.929.783-1.182.418-.266.98-.47 1.611-.606a.5.5 0 01.595.383z"
+                  clip-rule="evenodd" />
+              </svg> Warminster, PA</p>
+            <p><svg class="bi bi-phone" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M13 3H7a1 1 0 00-1 1v11a1 1 0 001 1h6a1 1 0 001-1V4a1 1 0 00-1-1zM7 2a2 2 0 00-2 2v11a2 2 0 002 2h6a2 2 0 002-2V4a2 2 0 00-2-2H7z"
+                  clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M10 15a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg> 267-973-9457</p>
+            <p><svg class="bi bi-envelope" width="2em" height="2em" viewBox="0 0 20 20" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M16 5H4a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V6a1 1 0 00-1-1zM4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4z"
+                  clip-rule="evenodd" />
+                <path fill-rule="evenodd"
+                  d="M2.071 6.243a.5.5 0 01.686-.172L10 10.417l7.243-4.346a.5.5 0 11.514.858L10 11.583 2.243 6.93a.5.5 0 01-.172-.686z"
+                  clip-rule="evenodd" />
+              </svg>agorbachenko94@gmail.com</p>
+          </p>
         </div>
       </div>
     </div>
-
   </div>
 </body>
 
